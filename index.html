@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fiesta XV Abdiel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom right, #A7BFC7, #00B0AA);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 4rem 2rem 2rem 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 2s ease-out;
+    }
+
+    .music-button {
+      margin-top: 1rem;
+      background-color: #fff;
+      color: #0072ff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, color 0.3s;
+      font-size: 1rem;
+    }
+
+    .music-button:hover {
+      background-color: #0072ff;
+      color: white;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 500px;
+      backdrop-filter: blur(6px);
+      animation: fadeInUp 2s ease;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .img-decor {
+      width: 160px;
+      position: fixed;
+      bottom: 20px;
+      left: 10px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .img-decor-top {
+      width: 130px;
+      position: fixed;
+      top: 20px;
+      right: 10px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .final-msg {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-top: 3rem;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 data-aos="zoom-in">¡Mis 15 Años! 🥳</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Y estás invitado a celebrarlo 🎉</p>
+    <button class="music-button" onclick="toggleMusic()">🎵 Reproducir Música</button>
+  </header>
+
+  <section>
+    <div class="info-box" data-aos="fade-right">
+      <h2> Informacion: </h2>
+      <p>🗓️ Sabado 23 de Agosto, 2025</p>
+      <p>⏰ 1:00 PM</p>
+      <p>📍 Av. Real de San Pedro 433, Real del Potosi, 78448 Real del Potosí, S.L.P.</p>
+      <p>🌊 Habrá alberca <br> </>¡Trae tu traje de baño!</p>
+    </div>
+
+<div class="info-box" data-aos="zoom-in">
+  <h2>⏳ Cuenta regresiva</h2>
+  <div id="countdown" style="font-size: 1.3rem; font-weight: bold;">
+    Cargando cuenta regresiva...
+  </div>
+</div>
+
+    <div class="info-box" data-aos="fade-left">
+      <h2>📍 Cómo llegar</h2>
+      <p>Ubicación interactiva para que no te pierdas:</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d230.93047512130008!2d-100.87893580610118!3d22.168350109619084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa6a57eb844eb%3A0x833a1b6318ca7a72!2sAv.%20Real%20de%20San%20Pedro%20433%2C%20Real%20del%20Potosi%2C%2078448%20Real%20del%20Potos%C3%AD%2C%20S.L.P.!5e0!3m2!1ses!2smx!4v1754146377004!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="final-msg">
+    ✅ ¡Confirma tu asistencia al <br><a href="https://wa.me/qr/RUHFU7YVAJPKL1">📞 +52 444 373 6291</a>
+    </div>
+  </section>
+
+  <div style="text-align: center; font-size: 0.8em; color: #000000; margin-top: 15px;">
+    Diseño e invitaciones Abdiel · <a href="https://wa.me/qr/RUHFU7YVAJPKL1" target="_blank" style="color: #00BB2D; text-decoration: none;">📞 +52 444 373 6291</a>
+  </div>
+  
+  <img src="Images/toby.png" alt="Flotador" class="img-decor">
+  <img src="Images/tem.png" alt="Solecito" class="img-decor-top">
+  
+  <audio id="bg-music">
+    <source src="Music/hotel.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const audio = document.getElementById('bg-music');
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        audio.pause();
+      } else {
+        audio.play();
+      }
+      isPlaying = !isPlaying;
+    }
+  </script>
+
+<script>
+  const countdownEl = document.getElementById("countdown");
+
+  // Fecha objetivo: sábado 23 de agosto de 2025 a las 16:00
+  const targetDate = new Date("August 23, 2025 16:00:00").getTime();
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    if (distance < 0) {
+      countdownEl.innerHTML = "🎉 ¡La fiesta ha comenzado!";
+      clearInterval(timer);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdownEl.innerHTML = `Faltan ${days} días, ${hours} horas, ${minutes} minutos y ${seconds} segundos`;
+  }
+
+  const timer = setInterval(updateCountdown, 1000);
+  updateCountdown();
+</script>
+
+</body>
+</html>
